@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css">
+	<title>To-Do List App</title>
+</head>
+<body>
+<div class="container">
+	<h1>To-Do List</h1>
+	<div class="input-container">
+		<input type="text" id="task" placeholder="Add a new task...">
+		<button id="add">Add</button>
+	</div>
+	<ul id="taskList"></ul>
+</div>
+
+</body>
+</html>
+
+<style>
+	body {
+		font-family: Arial, sans-serif;
+		background-color: #f0f0f0;
+		margin: 0;
+		padding: 0;
+	}
+
+	.container {
+		max-width: 400px;
+		margin: 0 auto;
+		background-color: #fff;
+		padding: 20px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	.input-container {
+		display: flex;
+		margin-bottom: 20px;
+	}
+
+	input[type="text"] {
+		flex: 1;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		font-size: 16px;
+	}
+
+	button {
+		padding: 10px 20px;
+		background-color: #007bff;
+		color: #fff;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	li {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		padding: 10px;
+		margin-bottom: 10px;
+		background-color: #fff;
+	}
+
+	.completed {
+		text-decoration: line-through;
+		color: #888;
+	}
+</style>
+<script>
+	const taskInput = document.getElementById('task');
+	const addButton = document.getElementById('add');
+	const taskList = document.getElementById('taskList');
+
+	addButton.addEventListener('click', () => {
+		const task = taskInput.value;
+		if (task) {
+			const li = document.createElement('li');
+			li.textContent = task;
+			taskList.appendChild(li);
+			taskInput.value = '';
+		}
+	});
+
+	taskList.addEventListener('click', (event) => {
+		if (event.target.tagName === 'LI') {
+			event.target.classList.toggle('completed');
+		}
+	});
+</script>
