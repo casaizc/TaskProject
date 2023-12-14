@@ -20,6 +20,7 @@ Then, navigate to the project directory: .../taskProject
 ## Construction and Execution
 
 --It is mandatory to have the environment variables configured correctly, especially the Java and Maven variables, otherwise the following command will not work.
+
 To build and run the project, use the following command:  mvn spring-boot:run  
 
 This command will build the project and run it on the Tomcat server. --server port = 8082
