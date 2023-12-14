@@ -15,7 +15,7 @@ To configure the project, first clone the repository to your local machine: git 
 
 or go to the following link and download the .zip project and unzip it on your computer: https://github.com/casaizc/TaskProject
 
-Then, navigate to the project directory: .../taskProject
+Then, navigate to the project directory: .../TaskProject-main
 
 ## Construction and Execution
 
