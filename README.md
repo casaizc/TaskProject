@@ -53,6 +53,8 @@ In the following path you will find the interface to access the embedded databas
 
 -password: saiz
 
+-JDBC URL: jdbc:h2:mem:taskdb
+
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
