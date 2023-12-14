@@ -12,6 +12,7 @@ This is a Spring Boot project using Java 17, Tomcat as the application server, H
 ## Setting
 
 To configure the project, first clone the repository to your local machine: git clone https://github.com/casaizc/TaskProject.git
+
 or go to the following link and download the .zip project and unzip it on your computer: https://github.com/casaizc/TaskProject
 
 Then, navigate to the project directory: cd .../taskProject
