@@ -50,6 +50,7 @@ In the following path you will find the API documentation: http://localhost:8082
 In the following path you will find the interface to access the embedded database: http://localhost:8082/h2-ui
 
 -user: carlos
+
 -password: saiz
 
 ## License
